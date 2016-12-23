@@ -38,4 +38,4 @@ text.noun<-subset(text.noun, nchar(as.character(text.noun$value))>1)
 text.noun.table<-table(text.noun$value)
 text.noun.table<-subset(data.frame(text.noun.table), Freq > 1)
 
-wordcloud2(data = text.noun.table, size = .5, fontFamily='NanumGothic', figPath = 'twit_pic.png',color = "skyblue")
+wordcloud2(data = text.noun.table, size = .5, fontFamily='NanumGothic', figPath = 'twit_pic.png',color = "skyblue",backgroundColor = "darkblue")
